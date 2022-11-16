@@ -8,7 +8,7 @@ import ArgoList from './components/ArgoList'
 
 import axios from "axios";
 
-const urlApi = "http://localhost:8080"
+const urlApi = "https://argostest.herokuapp.com"
 
 function App() {
 
