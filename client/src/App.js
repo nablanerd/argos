@@ -15,7 +15,7 @@ function App() {
   const [argos, setArgos] = useState([]);
 
   const getArgos = async () => {
-    const {data}  = await axios.get(`/api/argos`);
+    const {data}  = await axios.get(`${urlApi}/api/argos`);
     setArgos(data);
 
   };  
@@ -26,7 +26,7 @@ function App() {
 
 async function addArgo(name)
 {
-  const {data} = await axios.post('/api/argos', {
+  const {data} = await axios.post(`${urlApi}/api/argos`, {
     name: name,
   })
 
